@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.airbnb-logo{
+  width: 10rem;
+  cursor: pointer;
+}
+
+.navbar{
+  padding: 1.5rem 3rem;
+  width: auto;
+  box-shadow: 0px 1px 10px #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.search{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.search input{
+  height: 3rem;
+  width: 20rem;
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #999;
+  padding-left: 1rem;
+  color: black;
+}
+
+.search button{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  background-color: #ff7779;
+  border: 1px solid #ff7779;
+  cursor: pointer;
+}
+
+.search-icon{
+  width: 1.5rem;
+}
+
+.host{
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.login-section{
+  box-shadow: 0 6px 18px -9px rgba(0,0,0,1);
+  border-radius: 20px;
+  position: absolute;
+  gap: 1rem;
+  right: 0;
+  top: 4rem;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+}
+
+.login-section span{
+  cursor: pointer;
+}
+
+.login-section span:hover{
+  color: #999;
+}
+
+
+.login-section span:first-child{
+  font-weight: 400;
+}
+
+
+.login-text{
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+}
+
+.host h2{
+  font-size: 1.2rem;
+}
+
+.host-icon{
+  width: 2rem;
+  height: 2rem;
+}
+
+.host-login{
+  background-color: #999;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.host-login-icon{
+  color: white;
+}
+
+/* -------------------------------------------- */
+
+.hero{
+  display: flex;
+  margin-top: 6.2rem;
+}
+
+.hero-texts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 25rem;
+  color: white;
+}
+
+.hero-texts button{
+  background-color: #ff7779;
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.hero-texts h1{
+  font-size: 3rem;
+}
+.hero-texts span{
+  font-size: 1.2rem;
+}
+
+.hero-image{
+  width: 100%;
+  height: 25rem;
+  background-image: linear-gradient( rgb(153, 153, 153, 0.5), rgb(153, 153, 153, 0.1)),
+  url("../assets/living-room.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 60%;
+
+}
+
+.container{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+
+.explore{
+  margin-top: 1rem;
+}
+
+.explore h2{
+  font-size: 2rem;
+}
+
+.hero-cards{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.hero-card-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid rgba(153, 153, 153, 0.4);
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-card-item-image{
+  width: 150px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.hero-card-item-texts{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.star{
+  width: 15px;
+  height: 15px;
+}
+
+.stars-container{
+  color: #999;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ------------------------------------ */
+
+.live-anywhere{
+  margin-top: 3rem;
+}
+
+.live-anywhere h2{
+  font-size: 2rem;
+}
+
+.la-section-cards{
+  margin-top: 15px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.la-card-image{
+  height: 300px;
+  width: 282px;
+  border-radius: 20px;
+}
+
+.la-card-item{
+  box-shadow: 0 6px 18px -9px rgba(0,0,0,.75);
+  width: fit-content;
+  border: 1px solid rgba(153, 153, 153, 0.4);
+  border-radius: 20px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.la-card-text{
+  padding: 10px 0;
+  margin-left: 10%;
+}
+
+/* ---------------------------------------- */
+
+.become-host{
+  margin-top: 4rem;
+  width: auto;
+  border-radius: 20px;
+  height: 30rem;
+  background-color: #999;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #ff7779),
+  url(https://images.pexels.com/photos/4458554/pexels-photo-4458554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-position: 50% 40%;
+}
+
+.become-host-texts{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 7rem;
+  padding-left: 4rem;
+  color: white;
+  width: 35rem;
+}
+
+.become-host-texts h3{
+  font-size: 3rem;
+}
+
+.become-host-subtitle{
+  font-size: 1rem;
+}
+
+.become-host-texts span{
+  font-size: 1.2rem;
+}
+
+.become-host-texts button{
+  font-size: 1rem;
+  width: 10rem;
+  height: 4rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* ------------------------------ */
+
+.discover-places{
+  margin-top: 3rem;
+}
+
+.discover-places h2{
+  font-size: 2rem;
+}
+
+.discover-section-cards{
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2rem;
+  grid-column-gap: 1rem;
+}
+
+.discover-card-item{
+  box-shadow: 0 6px 18px -9px rgba(0,0,0,.75);
+  width: fit-content;
+  border: 1px solid rgba(153, 153, 153, 0.4);
+  border-radius: 20px;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: relative
+}
+
+.discover-card-image{
+  height: 300px;
+  width: 282px;
+  border-radius: 20px;
+}
+
+.discover-card-text{
+  padding-top: 10px;
+}
+
+.container-inner{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.discover-card-container{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.discover-texts-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 5%;
+}
+
+.rating-container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 22%;
+  right: 5%;
+}
+.rating-container span{
+  margin-left: 2px;
+}
+
+.discover-card-km, .discover-card-date{
+  font-weight: 100;
+}
+
+.discover-card-price{
+  font-weight: 600;
+}
+
+.discover-card-favorite{
+  box-shadow: 0 6px 18px -9px rgba(0,0,0,.75);
+  position: absolute;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  top: 5%;
+  left: 5%;
+}
+
+.discover-card-heart{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.heart{
+  fill: rgba(0, 0, 0, 0.5);
+  width: 2rem;
+  stroke: #fff;
+  filter: drop-shadow(0 5px 5px #999);
+  z-index: 10;
+}
+
+.heart-selected{
+  fill: #ff7779;
+}
+
+.discover-categories{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.discover-categories-icon svg{
+  width: 2rem;
+}
+
+.discover-categories-icon span {
+  font-size: 0.8rem;
+}
+
+.discover-categories-icon {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.discover-category-selected{
+  border-bottom: 2px solid black;
+}
+
+.show-less{
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff7779;
+  cursor: pointer;
+}
+
+/* ----------------------- */
+
+.footer{
+  padding: 1.5rem 3rem;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(153, 153, 153, 0.4);
+  margin-top: 3rem;
+}
+
+.footer-text span{
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.footer-text span:hover{
+  text-decoration: underline;
+}
+
+.footer-text{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.footer-up-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-up-container span{
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.footer-up-container span:hover{
+  text-decoration: underline;
+}
+
+.footer-up{
+  border-top: 1px solid rgba(153, 153, 153, 0.4);
+  padding-top: 2rem;
+  padding-left: 3rem;
+  display: flex;
+  justify-content:start;
+  margin-top: 3rem;
+  gap: 5rem;
+}
